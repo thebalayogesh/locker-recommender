@@ -1,0 +1,30 @@
+# robots.txt for https://www.homelockers.in/
+# Allows search engines + AI crawlers
+# Blocks sensitive paths
+
+# Global rules for all bots
+User-agent: *
+Disallow: /admin/
+Disallow: /server/
+Disallow: /private/
+
+Sitemap: https://www.homelockers.in/sitemap.xml
+
+# Explicit allow for AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
