@@ -24,7 +24,7 @@ function cmToFtIn(cm: number) {
 
 /* -------------------- types -------------------- */
 
-type Step = "brand" | "measure" | "intent";
+type Step = "brand" | "measure";
 type Unit = "ftin" | "cm";
 
 type Measure = {
@@ -37,26 +37,12 @@ type Measure = {
 
 export default function LockerRecommenderPage() {
   const router = useRouter();
-  const [step, setStep] = useState<Step>("brand");
+  const [step, setStep] = useState<Step>("measure");
   const [unit, setUnit] = useState<Unit>("ftin");
 
-  const [height, setHeight] = useState<Measure>({
-    ft: 3,
-    in: 0,
-    cm: 90,
-  });
-
-  const [width, setWidth] = useState<Measure>({
-    ft: 2,
-    in: 0,
-    cm: 60,
-  });
-
-  const [depth, setDepth] = useState<Measure>({
-    ft: 1,
-    in: 9,
-    cm: 55,
-  });
+  const [height, setHeight] = useState<Measure>({ ft: 3, in: 0, cm: 90 });
+  const [width, setWidth] = useState<Measure>({ ft: 2, in: 0, cm: 60 });
+  const [depth, setDepth] = useState<Measure>({ ft: 1, in: 9, cm: 55 });
 
   /* -------------------- unit switch -------------------- */
 
@@ -83,12 +69,18 @@ export default function LockerRecommenderPage() {
   function goToResults() {
     const h =
       unit === "cm" ? height.cm : Math.round(ftInToCm(height.ft, height.in));
+
     const w =
       unit === "cm" ? width.cm : Math.round(ftInToCm(width.ft, width.in));
+
     const d =
       unit === "cm" ? depth.cm : Math.round(ftInToCm(depth.ft, depth.in));
 
-    router.push(`/locker-recommender/results?h=${h}&w=${w}&d=${d}`);
+    if (h <= 0 || w <= 0 || d <= 0) return;
+
+    router.push(
+      `/locker-recommender/results?h=${h}&w=${w}&d=${d}&unit=${unit}`
+    );
   }
 
   /* -------------------- UI -------------------- */
@@ -96,66 +88,37 @@ export default function LockerRecommenderPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        {/* ---------------- BRAND STEP ---------------- */}
-        {step === "brand" && (
-          <Card className="border-none shadow-none">
-            <CardContent className="py-10 text-center space-y-6">
-              {/* Brand */}
-              <div className="space-y-1">
-                <h1 className="text-2xl font-bold tracking-tight">
-                  Secure Home Solutions
-                </h1>
-                <p className="text-sm text-muted-foreground">
-                  Trusted Locker Specialists
-                </p>
-              </div>
-
-              {/* Value proposition */}
-              <p className="text-base text-gray-700 leading-relaxed px-2">
-                Find the <span className="font-medium">right locker</span> that
-                fits your space perfectly — without guessing sizes or models.
-              </p>
-
-              {/* CTA */}
-              <Button
-                size="lg"
-                className="w-full text-base font-semibold"
-                onClick={() => setStep("measure")}
-              >
-                Find Your Locker
-              </Button>
-
-              {/* Trust micro-copy */}
-              <p className="text-xs text-muted-foreground">
-                Takes less than 1 minute · No signup required
-              </p>
-            </CardContent>
-          </Card>
-        )}
-
         {/* ---------------- MEASURE STEP ---------------- */}
         {step === "measure" && (
           <Card>
-            <CardHeader>
+            {/* <CardHeader>
               <CardTitle>Measure your available space</CardTitle>
-            </CardHeader>
+            </CardHeader> */}
 
             <CardContent className="space-y-6">
-              {/* UNIT TOGGLE */}
               <ToggleGroup
                 type="single"
                 value={unit}
                 onValueChange={(v) => {
                   if (!v) return;
+                  // eslint-disable-next-line @typescript-eslint/no-unused-expressions
                   v === "cm" ? switchToCm() : switchToFtIn();
                 }}
                 className="justify-center"
               >
-                <ToggleGroupItem value="ftin">Feet / Inches</ToggleGroupItem>
-                <ToggleGroupItem value="cm">CM</ToggleGroupItem>
+                <ToggleGroupItem
+                  value="ftin"
+                  className="px-4 data-[state=on]:bg-emerald-600 data-[state=on]:text-white data-[state=on]:border-emerald-600"
+                >
+                  Feet / Inches{" "}
+                </ToggleGroupItem>
+                <ToggleGroupItem
+                  className="px-4 data-[state=on]:bg-emerald-600 data-[state=on]:text-white data-[state=on]:border-emerald-600"value="cm"
+                >
+                  CM
+                </ToggleGroupItem>
               </ToggleGroup>
 
-              {/* INPUTS */}
               {[
                 { label: "Height", state: height, set: setHeight },
                 { label: "Width", state: width, set: setWidth },
@@ -190,31 +153,9 @@ export default function LockerRecommenderPage() {
                 </div>
               ))}
 
-              <Button className="w-full" onClick={() => setStep("intent")}>
-                Continue
+              <Button className="w-full" onClick={goToResults}>
+                See Recommended Lockers
               </Button>
-            </CardContent>
-          </Card>
-        )}
-
-        {/* ---------------- INTENT STEP ---------------- */}
-        {step === "intent" && (
-          <Card>
-            <CardHeader>
-              <CardTitle>When are you planning to buy?</CardTitle>
-            </CardHeader>
-
-            <CardContent className="space-y-3">
-              {["Immediately", "Within a week", "Just exploring"].map((opt) => (
-                <Button
-                  key={opt}
-                  variant="outline"
-                  className="w-full justify-start"
-                  onClick={goToResults}
-                >
-                  {opt}
-                </Button>
-              ))}
             </CardContent>
           </Card>
         )}
