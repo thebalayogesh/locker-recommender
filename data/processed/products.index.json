@@ -1,0 +1,1169 @@
+[
+  {
+    "id": "21",
+    "name": "MYST Small (Combination Lock)",
+    "slug": "myst-small",
+    "price": 999,
+    "size_cm": {
+      "h": 18,
+      "w": 11.8,
+      "d": 5.5
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "Combination Lock"
+    ],
+    "image": "/images/gift/myst-small-1.webp",
+    "tags": []
+  },
+  {
+    "id": "20",
+    "name": "MYST Big (Combination Lock)",
+    "slug": "myst-big",
+    "price": 1199,
+    "size_cm": {
+      "h": 24.3,
+      "w": 15.9,
+      "d": 5.5
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "Combination Lock"
+    ],
+    "image": "/images/gift/myst-big-1.webp",
+    "tags": []
+  },
+  {
+    "id": "26",
+    "name": "Dream Box ( Keylock )",
+    "slug": "dreambox-keylock",
+    "price": 3499,
+    "size_cm": {
+      "h": 17,
+      "w": 23,
+      "d": 17
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/gift/dreambox-kl-1.webp",
+    "tags": []
+  },
+  {
+    "id": "22",
+    "name": "Dream Box ( Blue )",
+    "slug": "dreambox-violet",
+    "price": 4499,
+    "size_cm": {
+      "h": 17,
+      "w": 23,
+      "d": 17
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/gift/dreambox-blue-1.webp",
+    "tags": []
+  },
+  {
+    "id": "23",
+    "name": "Dream Box ( Pink )",
+    "slug": "dreambox-pink",
+    "price": 4499,
+    "size_cm": {
+      "h": 17,
+      "w": 23,
+      "d": 17
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/gift/dreambox-pink-1.webp",
+    "tags": []
+  },
+  {
+    "id": "24",
+    "name": "Dream Box ( Black )",
+    "slug": "dreambox-black",
+    "price": 4499,
+    "size_cm": {
+      "h": 17,
+      "w": 23,
+      "d": 17
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/gift/dreambox-black-1.webp",
+    "tags": []
+  },
+  {
+    "id": "25",
+    "name": "Dream Box ( Red )",
+    "slug": "dreambox-red",
+    "price": 4499,
+    "size_cm": {
+      "h": 17,
+      "w": 23,
+      "d": 17
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/gift/dreambox-red-1.webp",
+    "tags": []
+  },
+  {
+    "id": "51",
+    "name": "Godrej Nx Pro 15L(KL)",
+    "slug": "godrej-nx-pro-15l-kl",
+    "price": 9099,
+    "size_cm": {
+      "h": 25,
+      "w": 35,
+      "d": 25
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/10x/Godrej-nx-pro-15l-kl-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "49",
+    "name": "Godrej Nx Pro 8L(Digi)",
+    "slug": "godrej-nx-pro-8l-digi",
+    "price": 10699,
+    "size_cm": {
+      "h": 20,
+      "w": 30,
+      "d": 20
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/10x/godrej-nx-pro-8l-digi-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "54",
+    "name": "Godrej Cashbox(KL)",
+    "slug": "godrej-cashbox-kl",
+    "price": 12299,
+    "size_cm": {
+      "h": 15.1,
+      "w": 35.6,
+      "d": 25.4
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/10x/Godrej-cashbox-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "48",
+    "name": "Godrej Nx Pro 15L(Digi)",
+    "slug": "godrej-nx-pro-15l-digi",
+    "price": 12899,
+    "size_cm": {
+      "h": 25,
+      "w": 35,
+      "d": 25
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/10x/godrej-nx-pro-15l-digi-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Verge Digital",
+    "slug": "verge-bio",
+    "price": 13000,
+    "size_cm": {
+      "h": 8.4,
+      "w": 34,
+      "d": 25.8
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/gift/verge-bio-1.webp",
+    "tags": []
+  },
+  {
+    "id": "27",
+    "name": "Verge Biometric",
+    "slug": "verge-bio",
+    "price": 13499,
+    "size_cm": {
+      "h": 8.4,
+      "w": 34,
+      "d": 25.8
+    },
+    "category": [
+      "gift"
+    ],
+    "lock_mechanism": [
+      "biometric"
+    ],
+    "image": "/images/gift/verge-bio-1.webp",
+    "tags": []
+  },
+  {
+    "id": "53",
+    "name": "Godrej Premium Coffer(KL)",
+    "slug": "godrej-premium-coffer-kl",
+    "price": 14899,
+    "size_cm": {
+      "h": 25.4,
+      "w": 36.2,
+      "d": 34
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/10x/Godrej-premium-coffer-kl-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "56",
+    "name": "Godrej  Nx key Storage Locker(KL)",
+    "slug": "godrej-nx-key-storage-locker",
+    "price": 16298,
+    "size_cm": {
+      "h": 36,
+      "w": 30,
+      "d": 10
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/10x/Godrej-nx-keylocker-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "40",
+    "name": "Godrej Nx Pro Seal(KL)",
+    "slug": "godrej-nx-pro-seal-kl",
+    "price": 16599,
+    "size_cm": {
+      "h": 25,
+      "w": 35,
+      "d": 40
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/10x/godrej-nx-pro-seal-kl-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "47",
+    "name": "Godrej Nx Pro 25L(Digi)",
+    "slug": "godrej-nx-pro-25l-digi",
+    "price": 18199,
+    "size_cm": {
+      "h": 20,
+      "w": 42,
+      "d": 37
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/10x/godrej-nx-pro-25l-digi-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "50",
+    "name": "Godrej Nx Pro 33L(KL)",
+    "slug": "godrej-nx-pro-33l-kl",
+    "price": 18399,
+    "size_cm": {
+      "h": 25,
+      "w": 45.5,
+      "d": 37.5
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/10x/Godrej-nx-pro-33l-kl-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "44",
+    "name": "Godrej Nx Pro Plus 15L(Digi+Bio)",
+    "slug": "godrej-nx-pro-plus-15l-digi-bio",
+    "price": 18449,
+    "size_cm": {
+      "h": 25,
+      "w": 35,
+      "d": 25
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric"
+    ],
+    "image": "/images/10x/godrej-nx-pro-plus-15l-digi-bio-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "46",
+    "name": "Godrej Nx Pro 30L(Digi)",
+    "slug": "godrej-nx-pro-30l-digi",
+    "price": 21299,
+    "size_cm": {
+      "h": 32,
+      "w": 40,
+      "d": 32
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/10x/godrej-nx-pro-30l-digi-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "55",
+    "name": "Godrej Privy(Digi)",
+    "slug": "godrej-privy-digi",
+    "price": 22499,
+    "size_cm": {
+      "h": 18,
+      "w": 40,
+      "d": 35
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/10x/Godrej-privy-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "45",
+    "name": "Godrej Nx Pro 40L(Digi)",
+    "slug": "godrej-nx-pro-40l-digi",
+    "price": 23599,
+    "size_cm": {
+      "h": 42,
+      "w": 35,
+      "d": 35
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/10x/godrej-nx-pro-40l-digi-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "52",
+    "name": "Godrej E-Swipe(Digi)",
+    "slug": "godrej-e-swipe-digi",
+    "price": 23699,
+    "size_cm": {
+      "h": 25,
+      "w": 45.5,
+      "d": 37.5
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digitel"
+    ],
+    "image": "/images/10x/Godrej-e-swipe-digi-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Godrej Nx Pro Slide(Digi+Bio)",
+    "slug": "godrej-nx-pro-slide-digi-bio",
+    "price": 26299,
+    "size_cm": {
+      "h": 19.5,
+      "w": 35.5,
+      "d": 400
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric"
+    ],
+    "image": "/images/10x/godrej-nx-pro-slide-digi-bio-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "43",
+    "name": "Godrej Nx Pro Plus 30L(Digi+Bio)",
+    "slug": "godrej-nx-pro-plus-30l-digi-bio",
+    "price": 27599,
+    "size_cm": {
+      "h": 32,
+      "w": 40,
+      "d": 32
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric"
+    ],
+    "image": "/images/10x/godrej-nx-pro-plus-30l-digi-bio-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Godrej Rhino Advanced(KL)",
+    "slug": "godrej-rhino-kl",
+    "price": 29599,
+    "size_cm": {
+      "h": 42.4,
+      "w": 46,
+      "d": 40.7
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/100x/Godrej-Rhino-v1-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "42",
+    "name": "Godrej Nx Pro Plus 45L(Digi+Bio)",
+    "slug": "godrej-nx-pro-plus-45l-digi-bio",
+    "price": 35849,
+    "size_cm": {
+      "h": 50,
+      "w": 35.5,
+      "d": 33
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric"
+    ],
+    "image": "/images/10x/godrej-nx-pro-plus-45l-digi-bio-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Godrej Ritz(Digi)",
+    "slug": "godrej-ritz-digi",
+    "price": 35999,
+    "size_cm": {
+      "h": 33,
+      "w": 40,
+      "d": 32
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "digitel"
+    ],
+    "image": "/images/100x/Godrej-Ritz-digi-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Godrej Rhino(Digi)",
+    "slug": "godrej-rhino-digi",
+    "price": 36499,
+    "size_cm": {
+      "h": 42.4,
+      "w": 46,
+      "d": 41.5
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "digitel"
+    ],
+    "image": "/images/100x/Godrej-Rhino-digi-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "38",
+    "name": "Godrej Nx Pro luxe 30l(Digi+Bio)",
+    "slug": "godrej-nx-pro-luxe-30l-digi-bio",
+    "price": 38599,
+    "size_cm": {
+      "h": 33,
+      "w": 40,
+      "d": 35
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric"
+    ],
+    "image": "/images/10x/godrej-nx-pro-luxe-30l-digi-bio-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Godrej Citadel 45-v2(KL)",
+    "slug": "godrej-citadel-45-v2-kl",
+    "price": 38799,
+    "size_cm": {
+      "h": 47,
+      "w": 49,
+      "d": 45
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/100x/Godrej-Citadel-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Godrej Ritz(Bio)",
+    "slug": "godrej-ritz-bio",
+    "price": 40299,
+    "size_cm": {
+      "h": 33,
+      "w": 40,
+      "d": 32
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "biometric"
+    ],
+    "image": "/images/100x/Godrej-Ritz-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "35",
+    "name": "Godrej Safire 40L (keylock)",
+    "slug": "godrej-safire-40l-keylock",
+    "price": 43199,
+    "size_cm": {
+      "h": 56,
+      "w": 42.2,
+      "d": 49.1
+    },
+    "category": [
+      "fire-resistant"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/fire-resistant/godrej-safire-40l-kl-1.webp",
+    "tags": []
+  },
+  {
+    "id": "14",
+    "name": "Godrej Rhino Advanced(KL)",
+    "slug": "godrej-rhino-advanced-kl",
+    "price": 44299,
+    "size_cm": {
+      "h": 61,
+      "w": 46,
+      "d": 40.7
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/100x/Godrej-Rhino-advanced-kl-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "41",
+    "name": "Godrej Nx Pro Plus 70L(Digi+Bio)",
+    "slug": "godrej-nx-pro-plus-70l-digi-bio",
+    "price": 46299,
+    "size_cm": {
+      "h": 55.8,
+      "w": 37,
+      "d": 44.5
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric"
+    ],
+    "image": "/images/10x/godrej-nx-pro-plus-70l-digi-bio-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "33",
+    "name": "Godrej Centiguard 445 (keylock)",
+    "slug": "godrej-centiguard-445-kl",
+    "price": 46499,
+    "size_cm": {
+      "h": 63.9,
+      "w": 49.5,
+      "d": 53.7
+    },
+    "category": [
+      "fire-resistant"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/fire-resistant/godrej-centiguard-560-kl-1.webp",
+    "tags": []
+  },
+  {
+    "id": "34",
+    "name": "Godrej Safire 40L (Digi)",
+    "slug": "godrej-safire-40l-digi",
+    "price": 46499,
+    "size_cm": {
+      "h": 56,
+      "w": 42.2,
+      "d": 49.1
+    },
+    "category": [
+      "fire-resistant"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/fire-resistant/godrej-safire-40l-digi-1.webp",
+    "tags": []
+  },
+  {
+    "id": "36",
+    "name": "Godrej Safire 20L (keylock)",
+    "slug": "godrej-safire-20l-keylock",
+    "price": 46499,
+    "size_cm": {
+      "h": 44,
+      "w": 37.7,
+      "d": 43.1
+    },
+    "category": [
+      "fire-resistant"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/fire-resistant/godrej-safire-40l-kl-1.webp",
+    "tags": []
+  },
+  {
+    "id": "37",
+    "name": "Godrej Nx Pro Luxe 48L(Digi+Bio)",
+    "slug": "godrej-nx-pro-luxe-48l-digi-bio",
+    "price": 47999,
+    "size_cm": {
+      "h": 53,
+      "w": 40,
+      "d": 35
+    },
+    "category": [
+      "10x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric"
+    ],
+    "image": "/images/10x/godrej-nx-pro-luxe-48l-digi-bio-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Godrej Rhino Advanced(Digi)",
+    "slug": "godrej-rhino-Advanced-digitel",
+    "price": 54399,
+    "size_cm": {
+      "h": 61,
+      "w": 46,
+      "d": 41.5
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "digitel"
+    ],
+    "image": "/images/100x/Godrej-Rhino-advanced-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Godrej Rhino Regal(KL)",
+    "slug": "godrej-rhino-regal-kl",
+    "price": 62899,
+    "size_cm": {
+      "h": 61,
+      "w": 46,
+      "d": 40.7
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/100x/Godrej-Rhino-Regal-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Godrej Centiguard 560 (keylock)",
+    "slug": "godrej-centiguard-560-keylock",
+    "price": 64699,
+    "size_cm": {
+      "h": 75.4,
+      "w": 58,
+      "d": 58.7
+    },
+    "category": [
+      "fire-resistant"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/fire-resistant/godrej-centiguard-560-kl-1.webp",
+    "tags": []
+  },
+  {
+    "id": "7",
+    "name": "Godrej Presidio(KL)",
+    "slug": "godrej-presidio-kl",
+    "price": 69999,
+    "size_cm": {
+      "h": 61.3,
+      "w": 43,
+      "d": 43
+    },
+    "category": [
+      "250x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/250x/Godrej-Presidio-1.webp",
+    "tags": [
+      "best-seller",
+      "featured"
+    ]
+  },
+  {
+    "id": "31",
+    "name": "Godrej Centiguard 560 (Digi)",
+    "slug": "godrej-centiguard-560-digi",
+    "price": 76999,
+    "size_cm": {
+      "h": 75.4,
+      "w": 58,
+      "d": 58.7
+    },
+    "category": [
+      "fire-resistant"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/fire-resistant/godrej-centiguard-560-digi-1.webp",
+    "tags": []
+  },
+  {
+    "id": "6",
+    "name": "Godrej Matrix 1814 (KL)",
+    "slug": "godrej-matrix-1814-kl",
+    "price": 85099,
+    "size_cm": {
+      "h": 59.6,
+      "w": 48.6,
+      "d": 54.7
+    },
+    "category": [
+      "250x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/250x/Godrej-Matrix-1814-kl-1.webp",
+    "tags": [
+      "best-seller",
+      "featured"
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Godrej Centiguard 1060 (Keylock)",
+    "slug": "godrej-centiguard-1060-keylock",
+    "price": 88599,
+    "size_cm": {
+      "h": 125.4,
+      "w": 58,
+      "d": 58.7
+    },
+    "category": [
+      "fire-resistant"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/fire-resistant/godrej-centiguard-1060-kl-1.webp",
+    "tags": []
+  },
+  {
+    "id": "4",
+    "name": "Godrej Matrix 2414 (KL)",
+    "slug": "godrej-matrix-2414-kl",
+    "price": 90199,
+    "size_cm": {
+      "h": 74.8,
+      "w": 48.6,
+      "d": 54.7
+    },
+    "category": [
+      "250x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/250x/Godrej-Matrix-2414-kl-1.webp",
+    "tags": [
+      "best-seller",
+      "featured"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Godrej Matrix 1814 (Digi)",
+    "slug": "godrej-matrix-1814-digi-kl",
+    "price": 96299,
+    "size_cm": {
+      "h": 59.6,
+      "w": 48.6,
+      "d": 54.7
+    },
+    "category": [
+      "250x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "keylock"
+    ],
+    "image": "/images/250x/Godrej-Matrix-1814-1.webp",
+    "tags": [
+      "best-seller",
+      "featured"
+    ]
+  },
+  {
+    "id": "29",
+    "name": "Godrej Centiguard 1060 (Digi)",
+    "slug": "godrej-centiguard-1060-digi",
+    "price": 103399,
+    "size_cm": {
+      "h": 125.4,
+      "w": 58,
+      "d": 58.7
+    },
+    "category": [
+      "fire-resistant"
+    ],
+    "lock_mechanism": [
+      "digital"
+    ],
+    "image": "/images/fire-resistant/godrej-centiguard-1060-digi-1.webp",
+    "tags": []
+  },
+  {
+    "id": "2",
+    "name": "Godrej Matrix 3016 (KL)",
+    "slug": "godrej-matrix-3016-kl",
+    "price": 106199,
+    "size_cm": {
+      "h": 90.3,
+      "w": 53.6,
+      "d": 54.7
+    },
+    "category": [
+      "250x"
+    ],
+    "lock_mechanism": [
+      "keylock"
+    ],
+    "image": "/images/250x/Godrej-Matrix-3016-kl-1.webp",
+    "tags": [
+      "best-seller",
+      "featured"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Godrej Matrix 2414 (Digi+KL)",
+    "slug": "godrej-matrix-2414-digi-kl",
+    "price": 119499,
+    "size_cm": {
+      "h": 74.8,
+      "w": 48.6,
+      "d": 54.7
+    },
+    "category": [
+      "250x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "keylock"
+    ],
+    "image": "/images/250x/Godrej-Matrix-2414-1.webp",
+    "tags": [
+      "best-seller",
+      "featured"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Godrej Nx Advanced 160L(Digi+Bio+KL)",
+    "slug": "godrej-nx-advanced-160l-digi-bio-kl",
+    "price": 124049,
+    "size_cm": {
+      "h": 80,
+      "w": 50,
+      "d": 50
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric",
+      "keylock"
+    ],
+    "image": "/images/100x/Godrej-Nx-Advanced-160l-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Godrej Matrix 3016 (Digi+KL)",
+    "slug": "godrej-matrix-3016-digi-kl",
+    "price": 140899,
+    "size_cm": {
+      "h": 90.3,
+      "w": 53.6,
+      "d": 54.7
+    },
+    "category": [
+      "250x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "keylock"
+    ],
+    "image": "/images/250x/Godrej-Matrix-3016-1.webp",
+    "tags": [
+      "best-seller",
+      "featured"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Godrej Nx Advanced 210L(Digi+Bio+KL)",
+    "slug": "godrej-nx-advanced-210l-digi-bio-kl",
+    "price": 156149,
+    "size_cm": {
+      "h": 106,
+      "w": 50,
+      "d": 50
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric",
+      "keylock"
+    ],
+    "image": "/images/100x/Godrej-Nx-Advanced-210l-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Godrej Nx Advanced 370L(Digi+Bio+KL)",
+    "slug": "godrej-nx-advanced-370l-digi-bio-kl",
+    "price": 199949,
+    "size_cm": {
+      "h": 125,
+      "w": 60,
+      "d": 60
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric",
+      "keylock"
+    ],
+    "image": "/images/100x/Godrej-Nx-Advanced-370l-1.webp",
+    "tags": [
+      "featured"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Godrej Nx Advanced 560L(Digi+Bio+KL)",
+    "slug": "godrej-nx-advanced-560l-digi-bio-kl",
+    "price": 241849,
+    "size_cm": {
+      "h": 158,
+      "w": 70,
+      "d": 60
+    },
+    "category": [
+      "100x"
+    ],
+    "lock_mechanism": [
+      "digital",
+      "biometric",
+      "keylock"
+    ],
+    "image": "/images/100x/Godrej-Nx-Advanced-560L-1.webp",
+    "tags": [
+      "featured"
+    ]
+  }
+]
