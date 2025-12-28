@@ -14,7 +14,7 @@ type Cm = {
 type ProductCardProps = {
   product: Product;
   unit: "ftin" | "cm";
-  recommendationType: "best-fit" | "also-fits";
+  recommendationType: "best-fit" | "also-fits" | "recommended";
   position: number;
 };
 

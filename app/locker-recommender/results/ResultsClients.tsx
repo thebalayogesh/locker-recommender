@@ -4,7 +4,12 @@ import { useSearchParams, useRouter } from "next/navigation";
 import rawProducts from "@/data/raw/products.json";
 import ProductCard from "@/components/ProductCard";
 
-import { Product, RecommendedProduct, RawProduct, ProductTag } from "@/types/product";
+import {
+  Product,
+  RawProduct,
+  ProductTag,
+  RecommendedProduct,
+} from "@/types/product";
 
 /* ---------- types ---------- */
 
@@ -14,12 +19,16 @@ type Cm = {
   depth: number;
 };
 
+/* ---------- constants ---------- */
+
 const ALLOWED_TAGS: ProductTag[] = [
   "best-fit",
   "also-fits",
   "recommended",
   "best-seller",
 ];
+
+/* ---------- normalization ---------- */
 
 function normalizeProducts(raw: RawProduct[]): Product[] {
   return raw.map((p) => ({
@@ -30,7 +39,6 @@ function normalizeProducts(raw: RawProduct[]): Product[] {
   }));
 }
 
-
 /* ---------- helpers ---------- */
 
 function fits(space: Cm, locker: Cm) {
@@ -38,8 +46,9 @@ function fits(space: Cm, locker: Cm) {
     locker.height <= space.height &&
     locker.width <= space.width &&
     locker.depth <= space.depth
-  )
+  ) {
     return true;
+  }
 
   const rotations = [
     [locker.width, locker.height, locker.depth],
@@ -55,13 +64,13 @@ function fits(space: Cm, locker: Cm) {
 function recommend(
   products: Product[],
   space: Cm,
-  limit = 3
+  limit = 50
 ): RecommendedProduct[] {
   const userVol = space.height * space.width * space.depth;
 
   return products
     .filter((p) => p.dimensions?.cm)
-    .filter((p) => fits(space, p.dimensions.cm)) // ⬅️ NO nulls
+    .filter((p) => fits(space, p.dimensions.cm))
     .map((p) => {
       const d = p.dimensions.cm;
       const lockerVol = d.height * d.width * d.depth;
@@ -81,7 +90,9 @@ function recommend(
     .slice(0, limit);
 }
 
-const products = normalizeProducts(rawProducts)
+/* ---------- data ---------- */
+
+const products = normalizeProducts(rawProducts);
 
 /* ---------- page ---------- */
 
@@ -100,13 +111,40 @@ export default function ResultsClient() {
   }
 
   const space: Cm = { height: h, width: w, depth: d };
-  const results: Product[] = recommend(products, space, 4);
 
-  const bestFit = results[0];
-  const alsoFits = results.slice(1);
+  // 🔑 Compute ONCE
+  const allFits = recommend(products, space, 50);
+
+  // const userVol = space.height * space.width * space.depth;
+
+
+  const bestFit = allFits[0];
+  const alsoFits = allFits.slice(1, 6);
+
+  const bestSellers = allFits
+    .filter((p) => p.tags?.includes("best-seller"))
+    .slice(0, 4);
+
+  const featured = allFits
+    .filter((p) => p.tags?.includes("recommended"))
+    .slice(0, 4);
+
+  // const futureProof = allFits
+  //   .filter((p) => {
+  //     const ratio = p._lockerVol / userVol;
+  //     return ratio > 1.1 && ratio <= 1.4;
+  //   })
+  //   .slice(0, 4);
+
+  // const bigOptions = allFits
+  //   .filter((p) => {
+  //     const ratio = p._lockerVol / userVol;
+  //     return ratio > 1.4;
+  //   })
+  //   .slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-2 pb-2 px-4">
+    <div className="min-h-screen bg-gray-50 px-4 py-3">
       <div className="mx-auto max-w-4xl w-full">
         {/* HEADER */}
         <h1 className="text-xl font-bold mb-1">Recommended Lockers</h1>
@@ -114,14 +152,14 @@ export default function ResultsClient() {
         <p className="text-sm text-gray-600 mb-4">
           Based on space:{" "}
           <strong>
-            {unit === "ftin"
-              ? `${h} × ${w} × ${d} (cm converted)`
-              : `${h} × ${w} × ${d} cm`}
+            {unit === "cm"
+              ? `${h} × ${w} × ${d} cm`
+              : `${h} × ${w} × ${d} (converted from ft/in)`}
           </strong>
         </p>
 
         {/* NO RESULTS */}
-        {results.length === 0 && (
+        {allFits.length === 0 && (
           <div className="bg-white rounded-lg p-6 text-center">
             <p className="font-medium mb-2">No locker fits this exact space.</p>
             <button
@@ -133,7 +171,7 @@ export default function ResultsClient() {
           </div>
         )}
 
-        {/* RESULTS */}
+        {/* BEST FIT */}
         {bestFit && (
           <>
             <h2 className="text-sm font-semibold mb-2">
@@ -149,6 +187,7 @@ export default function ResultsClient() {
           </>
         )}
 
+        {/* ALSO FITS */}
         {alsoFits.length > 0 && (
           <>
             <h3 className="text-sm font-semibold mt-4 mb-2">
@@ -166,9 +205,46 @@ export default function ResultsClient() {
             ))}
           </>
         )}
+
+        {/* BEST SELLERS */}
+        {bestSellers.length > 0 && (
+          <>
+            <h3 className="text-sm font-semibold mt-6 mb-2">🔥 Best Sellers</h3>
+
+            {bestSellers.map((product, index) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                unit={unit}
+                recommendationType="recommended"
+                position={index}
+              />
+            ))}
+          </>
+        )}
+
+        {/* FEATURED / EXPERT PICKS */}
+        {featured.length > 0 && (
+          <>
+            <h3 className="text-sm font-semibold mt-6 mb-2">
+              ⭐ Expert Recommended
+            </h3>
+
+            {featured.map((product, index) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                unit={unit}
+                recommendationType="recommended"
+                position={index}
+              />
+            ))}
+          </>
+        )}
       </div>
 
-      {/* Testign purpose */}
+      {/* testing */}
+
     </div>
   );
 }
