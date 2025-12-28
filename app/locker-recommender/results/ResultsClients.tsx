@@ -4,7 +4,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import products from "@/data/raw/products.json";
 import ProductCard from "@/components/ProductCard";
 
-import { Product } from "@/types/product";
+import { Product, RecommendedProduct } from "@/types/product";
 
 /* ---------- types ---------- */
 
@@ -39,35 +39,31 @@ function recommend(
   products: Product[],
   space: Cm,
   limit = 3
-): Product[] {
+): RecommendedProduct[] {
   const userVol = space.height * space.width * space.depth;
 
   return products
     .filter((p) => p.dimensions?.cm)
+    .filter((p) => fits(space, p.dimensions.cm)) // ⬅️ NO nulls
     .map((p) => {
       const d = p.dimensions.cm;
-      if (!fits(space, d)) return null;
-
       const lockerVol = d.height * d.width * d.depth;
 
       return {
         ...p,
-        _fitScore: Math.abs(userVol - lockerVol), // lower is better
-        _lockerVol: lockerVol,                   // bigger is better
+        _fitScore: Math.abs(userVol - lockerVol),
+        _lockerVol: lockerVol,
       };
     })
-    .filter(Boolean)
     .sort((a, b) => {
-      // 1️⃣ Best fit first
       if (a._fitScore !== b._fitScore) {
         return a._fitScore - b._fitScore;
       }
-
-      // 2️⃣ Among equally good fits, prefer bigger lockers
       return b._lockerVol - a._lockerVol;
     })
     .slice(0, limit);
 }
+
 
 
 /* ---------- page ---------- */

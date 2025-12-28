@@ -29,6 +29,13 @@ export type ProductTag =
   | "recommended"
   | "best-seller";
 
+
+  export type RecommendedProduct = Product & {
+  _fitScore: number;
+  _lockerVol: number;
+};
+
+
 export type Product = {
   id: string;
   name: string;
