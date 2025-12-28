@@ -26,6 +26,7 @@ export type ProductDimensions = {
 
 export type ProductTag =
   | "best-fit"
+  | "also-fits"
   | "recommended"
   | "best-seller";
 
@@ -33,6 +34,29 @@ export type ProductTag =
   export type RecommendedProduct = Product & {
   _fitScore: number;
   _lockerVol: number;
+};
+
+
+// types/raw-product.ts
+export type RawProduct = {
+  id: string;
+  name: string;
+  slug: string;
+  category: string[];
+  price?: string;
+  weight?: string;
+  volume?: string;
+  images: string[];
+  description?: string;
+  lock_mechanism?: string[];
+  tags?: string[];
+  dimensions: {
+    cm: {
+      height: number;
+      width: number;
+      depth: number;
+    };
+  };
 };
 
 

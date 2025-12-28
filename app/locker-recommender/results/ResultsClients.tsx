@@ -1,10 +1,10 @@
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
-import products from "@/data/raw/products.json";
+import rawProducts from "@/data/raw/products.json";
 import ProductCard from "@/components/ProductCard";
 
-import { Product, RecommendedProduct } from "@/types/product";
+import { Product, RecommendedProduct, RawProduct, ProductTag } from "@/types/product";
 
 /* ---------- types ---------- */
 
@@ -13,6 +13,23 @@ type Cm = {
   width: number;
   depth: number;
 };
+
+const ALLOWED_TAGS: ProductTag[] = [
+  "best-fit",
+  "also-fits",
+  "recommended",
+  "best-seller",
+];
+
+function normalizeProducts(raw: RawProduct[]): Product[] {
+  return raw.map((p) => ({
+    ...p,
+    tags: p.tags?.filter((t): t is ProductTag =>
+      ALLOWED_TAGS.includes(t as ProductTag)
+    ),
+  }));
+}
+
 
 /* ---------- helpers ---------- */
 
@@ -64,7 +81,7 @@ function recommend(
     .slice(0, limit);
 }
 
-
+const products = normalizeProducts(rawProducts)
 
 /* ---------- page ---------- */
 
